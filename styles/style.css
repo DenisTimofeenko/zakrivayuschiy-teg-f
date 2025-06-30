@@ -11,10 +11,14 @@
 */
 
 .page {
-  /* min-inline-size: 320px;
-  min-block-size: 100dvb; */
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
   font-family: var(--font__common), sans-serif;
   font-variation-settings: 'wght' var(--font__weight_common);
+  background-image: var(--bg--gradient);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .header {
@@ -47,18 +51,21 @@
   justify-self: center;
   width: clamp(23.188rem, 30.516vw + 16.035rem, 43.5rem);
   margin-top: 102px;
+  background-color: #fff;
 }
 
 .main {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 51px;
+  margin-bottom: 54px;
 }
 
 .card {
   max-width: clamp(23.188rem, 30.516vw + 16.035rem, 43.5rem);
   justify-self: center;
   border: 1px solid black;
+  background-color: #fff;
 }
 
 .image {
@@ -96,7 +103,6 @@
   (text-stroke: 1px var(--stroke__color)) or
     (-webkit-text-stroke: 1px var(--stroke__color))
 ) {
-
   .image__container {
     -webkit-text-stroke: 1px var(--stroke__color);
     text-stroke: 1px var(--stroke__color);
@@ -118,4 +124,63 @@ dialog::backdrop {
   backdrop-filter: blur(7px);
 }
 
+.button-box {
+  display: flex;
+  justify-content: end;
+  /* stylelint-disable-next-line shorthand-property-no-redundant-values */
+  padding: 25px 25px;
+}
 
+.card__like-button {
+  font-family: var(--font__accent), sans-serif;
+  font-size: 14px;
+  padding: 12.5px 37px;
+}
+
+.card__icon-button {
+  border: none;
+  background-color: transparent;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.button__svg {
+  width: 28px;
+  height: 28px;
+}
+
+.button--big .button__svg {
+  width: 39px;
+  height: 39px;
+}
+
+.button {
+  color: #fff;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+span {
+  mix-blend-mode: difference;
+}
+
+.button svg {
+  mix-blend-mode: difference;
+}
