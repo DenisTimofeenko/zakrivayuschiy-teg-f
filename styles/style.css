@@ -314,5 +314,10 @@ dialog::backdrop {
   min-inline-size: 306px;
   display: flex;
   flex-direction: column;
+  gap: 8px;
   align-items: center;
+  margin-bottom: 100px;
+  padding: 15px 0;
+  font-family: var(--font__accent);
+  font-size: 14px;
 }
