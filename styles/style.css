@@ -133,6 +133,7 @@ paragraf__border {
   font-family: var(--font__accent), sans-serif;
   font-variation-settings: 'opsz' 14px;
   color: rgb(0 0 0 / 1);
+  z-index: 1;
 
   text-shadow:
     -1px 0 var(--stroke__color),
@@ -347,4 +348,36 @@ paragraf__border {
   padding-left: 20px;
   text-transform: uppercase;
   letter-spacing: 0;
+}
+
+.image-bright {
+  filter: brightness(2);
+}
+
+.image-contrast {
+  filter: contrast(20%);
+}
+
+.image-blur {
+  filter: blur(2rem);
+}
+
+.image-graysclae {
+  filter: grayscale(0.8);
+}
+
+.image-saturate {
+  filter: saturate(0.8);
+}
+
+.image-hue-rotate {
+  filter: hue-rotate(45deg);
+}
+
+.image-sepia {
+  filter: sepia(0.9);
+}
+
+.image-invert-contrast {
+  filter: invert(0.7) contrast(0.5);
 }
