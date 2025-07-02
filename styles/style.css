@@ -122,7 +122,7 @@ paragraf__border {
 }
 
 .image__container::before {
-  content: '</HTML>';
+  content: attr(label-name);
   position: absolute;
   top: 20px;
   right: 8px;
@@ -155,7 +155,6 @@ paragraf__border {
 }
 
 .card__like-button {
-  
   min-inline-size: 130px;
 }
 
@@ -179,7 +178,6 @@ paragraf__border {
   margin-bottom: 3px;
   font-family: var(--font__accent), sans-serif;
   font-size: 14px;
-  
 }
 
 .button__svg {
