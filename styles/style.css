@@ -154,9 +154,7 @@ paragraf__border {
 }
 
 .card__like-button {
-  font-family: var(--font__accent), sans-serif;
-  font-size: 14px;
-  padding: 9px 0;
+  
   min-inline-size: 130px;
 }
 
@@ -178,6 +176,9 @@ paragraf__border {
   border: 2px solid black;
   margin-top: 1px;
   margin-bottom: 3px;
+  font-family: var(--font__accent), sans-serif;
+  font-size: 14px;
+  
 }
 
 .button__svg {
@@ -214,6 +215,7 @@ paragraf__border {
 
 .button__text {
   mix-blend-mode: difference;
+  padding: 9px 0;
 }
 
 .button .button__svg {
@@ -341,6 +343,8 @@ paragraf__border {
 .popup--text {
   font-family: var(--font__accent);
   font-size: 14px;
+  line-height: 21px;
   padding-left: 20px;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
