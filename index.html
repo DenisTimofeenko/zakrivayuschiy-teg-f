@@ -453,14 +453,18 @@
         </svg>
         <span class="button__text"> Сохранить на память </span>
       </button>
-      <dialog id="save-id">
-        <button type="button" class="button button--big">
-          <span>Вставьте дискету, чтобы продолжить</span>
-          <svg class="button__svg" viewBox="0 0 40 40">
-            <use href="./svg/floppy-symbol.svg#floppy" />
-          </svg>
+      <dialog class="popup" id="save-id">
+        <svg class="button__svg" viewBox="0 0 40 40">
+          <use href="./svg/floppy-symbol.svg#floppy" />
+        </svg>
+        <span class="popup--text">Вставьте дискету, чтобы продолжить</span>
+        <button
+          class="button popup--button"
+          type="button"
+          onclick="window['save-id'].close()"
+        >
+          <span class="button__text">OK</span>
         </button>
-        <button type="button" onclick="window['save-id'].close()">OK</button>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>

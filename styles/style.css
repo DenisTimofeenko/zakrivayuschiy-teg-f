@@ -141,11 +141,6 @@ paragraf__border {
     0 -1px var(--stroke__color);
 }
 
-dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.3);
-  backdrop-filter: blur(7px);
-}
-
 .button-box {
   display: flex;
   justify-content: end;
@@ -190,7 +185,7 @@ dialog::backdrop {
   height: 28px;
 }
 
-.button--big .button__svg {
+.popup .button__svg {
   width: 39px;
   height: 39px;
 }
@@ -320,4 +315,32 @@ dialog::backdrop {
   padding: 15px 0;
   font-family: var(--font__accent);
   font-size: 14px;
+}
+
+.popup {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  padding: 42px 30px;
+  row-gap: 30px;
+}
+
+.popup--button {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.popup:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.popup::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.popup--text {
+  font-family: var(--font__accent);
+  font-size: 14px;
+  padding-left: 20px;
+  text-transform: uppercase;
 }
