@@ -114,7 +114,8 @@ paragraf__border {
   (text-stroke: 1px var(--stroke__color)) or
     (-webkit-text-stroke: 1px var(--stroke__color))
 ) {
-  .image__container {
+
+  .image__container::before {
     -webkit-text-stroke: 1px var(--stroke__color);
     text-stroke: 1px var(--stroke__color);
     text-shadow: none;
@@ -122,7 +123,7 @@ paragraf__border {
 }
 
 .image__container::before {
-  content: attr(label-name);
+  content: attr(data-label-name);
   position: absolute;
   top: 20px;
   right: 8px;
@@ -178,6 +179,7 @@ paragraf__border {
   margin-bottom: 3px;
   font-family: var(--font__accent), sans-serif;
   font-size: 14px;
+  padding: 9px 0;
 }
 
 .button__svg {
@@ -379,3 +381,4 @@ paragraf__border {
 .image-invert-contrast {
   filter: invert(0.7) contrast(0.5);
 }
+
