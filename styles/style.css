@@ -359,7 +359,7 @@ paragraf__border {
 }
 
 .image-blur {
-  filter: blur(2rem);
+  filter: blur(0.5rem);
 }
 
 .image-graysclae {
@@ -379,6 +379,6 @@ paragraf__border {
 }
 
 .image-invert-contrast {
-  filter: invert(0.7) contrast(0.5);
+  filter: invert(0.1) contrast(0.5);
 }
 
