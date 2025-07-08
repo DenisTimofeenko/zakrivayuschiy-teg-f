@@ -1,7 +1,7 @@
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
 
 @font-face {
-  font-family: 'PressStart2P-Regular';
+  font-family: 'PressStart2P';
   /* stylelint-disable-next-line function-url-quotes */
   src: url('./PressStart2P-Regular.woff') format('woff');
   font-weight: normal;

@@ -28,7 +28,7 @@
 }
 
 .header__title {
-  font-family: var(--font__accent), sans-serif;
+  font-family: var(--font__accent), fantasy;
   font-size: clamp(3.063rem, 1.502vw + 2.71rem, 4.063rem);
   letter-spacing: 0;
   line-height: 100%;
@@ -39,7 +39,7 @@
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.845vw + 0.677rem, 1.438rem);
-  font-family: var(--font__accent), sans-serif;
+  font-family: var(--font__accent), fantasy;
   text-transform: uppercase;
   justify-self: center;
   padding-top: 20px;
@@ -91,7 +91,7 @@
   padding-left: 24px;
   padding-right: 25px;
   padding-top: 30px;
-  font-family: var(--font__common);
+  font-family: var(--font__common), sans-serif;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0;
@@ -130,7 +130,7 @@
   mix-blend-mode: hard-light;
   font-size: 14px;
   letter-spacing: 0;
-  font-family: var(--font__accent), sans-serif;
+  font-family: var(--font__accent), fantasy;
   color: rgb(0 0 0 / 1);
   z-index: 1;
 
@@ -157,9 +157,10 @@
 .card__icon-button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
-.footer {
+.save__container {
   display: flex;
   justify-content: center;
 }
@@ -172,9 +173,10 @@
   border: 2px solid black;
   margin-top: 1px;
   margin-bottom: 3px;
-  font-family: var(--font__accent), sans-serif;
+  font-family: var(--font__accent), fantasy;
   font-size: 14px;
   padding: 9px 0;
+  cursor: pointer;
 }
 
 .button__text {
@@ -253,7 +255,7 @@
 }
 
 .popup--text {
-  font-family: var(--font__accent);
+  font-family: var(--font__accent), fantasy;
   font-size: 14px;
   line-height: 21px;
   padding-left: 20px;
@@ -294,7 +296,7 @@
 }
 
 .button-floppy {
-  font-family: var(--font__accent);
+  font-family: var(--font__accent), fantasy;
   font-size: 14px;
   display: flex;
   /* gap: 8px; */
