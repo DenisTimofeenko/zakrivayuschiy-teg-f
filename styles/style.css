@@ -146,10 +146,10 @@
   justify-content: end;
   align-items: center;
   min-height: 38px;
-  padding-top: 22px;
+  padding-top: 25px;
   padding-left: 23px;
   padding-right: 25px;
-  padding-bottom: 29px;
+  padding-bottom: 25px;
 }
 
 .card__like-button {
