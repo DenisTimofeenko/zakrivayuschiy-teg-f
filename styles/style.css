@@ -143,6 +143,7 @@
 
 .button-box {
   display: flex;
+  gap: 2px;
   justify-content: end;
   align-items: center;
   min-height: 38px;
@@ -166,6 +167,7 @@
   padding: 0;
   align-self: flex-end;
   border: none;
+  transition: 0.3s ease;
 }
 
 .save__container {
@@ -183,6 +185,7 @@
   font-size: 14px;
   padding: 10px 0;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .button__text {
@@ -205,7 +208,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 black;
-  transition: 0.3s ease;
 }
 
 .button::before {
@@ -231,7 +233,6 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid black;
-  transition: 0.3s ease;
 }
 
 .sparks {
@@ -331,7 +332,7 @@
   }
 
   .image__container::before {
-    top: 20px;
+    top: 22px;
     right: 10px;
   }
 }
