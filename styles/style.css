@@ -58,7 +58,6 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 51px;
-  margin-bottom: 54px;
 }
 
 .card {
