@@ -146,7 +146,7 @@
   gap: 2px;
   justify-content: end;
   align-items: center;
-  min-height: 38px;
+  /* min-height: 38px; */
   padding-top: 25px;
   padding-left: 23px;
   padding-right: 25px;
@@ -167,7 +167,8 @@
   padding: 0;
   align-self: flex-end;
   border: none;
-  transition: 0.3s ease;
+  transition: border 0.3s ease;
+  max-block-size: 38px;
 }
 
 .save__container {
@@ -185,7 +186,7 @@
   font-size: 14px;
   padding: 10px 0;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -200,6 +201,7 @@
 .popup .button__svg {
   width: 39px;
   height: 39px;
+  align-self: center;
 }
 
 .button:focus {
@@ -334,5 +336,9 @@
   .image__container::before {
     top: 22px;
     right: 10px;
+  }
+
+  .popup {
+    padding: 30px 42px;
   }
 }
