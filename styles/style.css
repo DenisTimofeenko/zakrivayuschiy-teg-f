@@ -241,7 +241,6 @@
 }
 
 .popup {
-  display: grid;
   grid-template-columns: min-content 1fr;
   padding: 30px;
   row-gap: 30px;
@@ -254,9 +253,9 @@
   grid-column-end: 3;
 }
 
-.popup:not([open]) {
-  pointer-events: none;
-  opacity: 0;
+.popup[open] {
+  display: grid;
+  grid-template-columns: min-content 1fr;
 }
 
 .popup::backdrop {
